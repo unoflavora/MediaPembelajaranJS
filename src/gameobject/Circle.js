@@ -37,22 +37,11 @@ export default class Circle extends Phaser.GameObjects.Arc {
      */
     update(timer, delta) {
         this.timer += delta;
-
         let dx = this.dx
         let dy = this.dy
         dx = (Math.random() < 0.5 ? -1 : 1) * dx
         dy = (Math.random() < 0.5 ? -1 : 1) * dy
         this.x += dx
         this.y += dy
-
-
-        while (this.timer > 500) {
-
-            this.timer -= 500
-
-        }
-
-
-
     }
 }
